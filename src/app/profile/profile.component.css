@@ -1,0 +1,29 @@
+.card {
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+  }
+  
+  .card-body p {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* Banner Styling */
+.banner {
+       background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .banner p {
+    font-size: 1.25rem;
+  }
+  

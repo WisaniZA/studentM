@@ -1,0 +1,51 @@
+.card {
+    max-width: 400px; /* Limit the width of the card */
+    margin: 0 auto;  /* Center the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .alert {
+    font-size: 0.9rem;
+  }
+  
+  .banner {
+    background-size: cover;
+ background-position: center;
+ color: white;
+}
+
+.banner h1 {
+ font-size: 2.5rem;
+ font-weight: bold;
+}
+
+.banner p {
+ font-size: 1.25rem;
+}
+
+.card-footer {
+    background-color: #f8f9fa; /* Light background for the card footer */
+  }
+  
+  .footer {
+    position: fixed; /* Keeps the footer at the bottom of the page */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Dark background for the global footer */
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .footer p {
+    margin: 0;
+  }

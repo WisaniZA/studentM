@@ -1,0 +1,60 @@
+<div class="container-fluid p-0">
+    <!-- Banner Section -->
+    <div class="banner bg-primary text-white text-center">
+      <h1>Welcome to Your Profile</h1>
+      <p>Your personal information is displayed below.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar Section -->
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="/profile" class="list-group-item list-group-item-action active">Profile</a>
+          <a href="/updatepassword" class="list-group-item list-group-item-action">Update Password</a>
+          <!-- Add other sidebar items here -->
+        </div>
+      </div>
+  
+      <!-- Profile Content Section -->
+      <div class="col-md-9">
+        <div class="card mt-5">
+          <div class="card-header text-center">
+            <h4>Profile</h4>
+          </div>
+          <div class="card-body">
+            <!-- Show loading spinner when fetching data -->
+            <div *ngIf="loading" class="text-center">
+              <div class="spinner-border text-primary" role="status"></div>
+            </div>
+  
+            <!-- Show error message if something goes wrong -->
+            <div *ngIf="error" class="alert alert-danger">
+              {{ error }}
+            </div>
+  
+            <!-- Display profile information -->
+            <div *ngIf="!loading && !error">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <p>{{ student.name }}</p>
+              </div>
+  
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <p>{{ student.email }}</p>
+              </div>
+  
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <p>******</p> <!-- Don't show password for security reasons -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
